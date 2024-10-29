@@ -5,7 +5,7 @@
 package telas;
 
 /**
- *
+ * Classe que cria a tela de Login do sistema
  * @author renat
  */
 public class TelaLogin extends javax.swing.JFrame {
@@ -53,6 +53,11 @@ public class TelaLogin extends javax.swing.JFrame {
         });
 
         jButton1.setText("Entrar");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setText("Sair");
 
@@ -108,6 +113,12 @@ public class TelaLogin extends javax.swing.JFrame {
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        TelaPrincipal tela = new TelaPrincipal();
+        tela.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
